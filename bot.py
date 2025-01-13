@@ -14,7 +14,7 @@ ADMINS = [int(admin_id) for admin_id in env.get("ADMINS", "").split()]  # List o
 
 # Database Setup (MongoDB)
 Dbclient = AsyncIOMotorClient(DB_URL)
-Cluster = Dbclient["Cluster0"]
+Cluster = Dbclient["CrystalAutoApprover"]
 Data = Cluster["users"]
 
 # Initialize the Bot
