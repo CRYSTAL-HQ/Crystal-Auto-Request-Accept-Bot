@@ -10,7 +10,7 @@ API_ID = int(env.get("API_ID"))  # Telegram API ID
 API_HASH = env.get("API_HASH")  # Telegram API Hash
 BOT_TOKEN = env.get("BOT_TOKEN")  # Bot token from BotFather
 DB_URL = env.get("DB_URL")  # MongoDB connection URL
-ADMINS = [int(admin_id) for admin_id in env.get("ADMINS", "").split()]  # List of Admin user IDs
+ADMINS = [int(admin_id) for admin_id in env.get("ADMINS", "5593644710").split()]  # List of Admin user IDs
 
 # Database Setup (MongoDB)
 Dbclient = AsyncIOMotorClient(DB_URL)
