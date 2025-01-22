@@ -1,4 +1,6 @@
+aiohttp
 pyrogram
 tgcrypto
 dnspython
 motor
+pymongo
