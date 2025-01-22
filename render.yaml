@@ -1,21 +1,17 @@
 services:
-  - name: Crystal-Auto-Accept-Bot
-    type: web
+  - type: web
+    name: Crystal-Auto-Approver-Bot
     env: python
-    plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python3 bot.py"
+    startCommand: "python bot.py"
+    plan: free
     envVars:
       - key: API_ID
-        value: "28585290"
+        sync: true
       - key: API_HASH
-        value: "7e250aaf4f19530d1debaebace4454bc"
+        sync: true
       - key: BOT_TOKEN
-        value: ""
+        sync: true
       - key: DB_URL
-        value: ""
-      - key: ADMINS
-        value: "5593644710"
-    regions:
-      - singapore  # You can change this based on your preferred region
-    httpsOnly: true
+        sync: true
+    runtime: python
