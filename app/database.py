@@ -1,5 +1,3 @@
-# app/database.py
-
 from motor.motor_asyncio import AsyncIOMotorClient
 from os import environ as env
 
