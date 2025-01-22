@@ -1,1 +1,1 @@
-# Crystal-Auto-Request-Accept-Bot
+# Crystal-Auto-Approver-Bot
